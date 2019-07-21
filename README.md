@@ -1,2 +1,3 @@
-# 音乐播放器
+# Electron 音乐播放器
 
+![avatar](./bg.png)
