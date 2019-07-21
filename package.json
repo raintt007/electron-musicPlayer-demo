@@ -1,0 +1,59 @@
+{
+  "name": "music-player",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon --watch main.js --exec 'electron .'",
+    "dist": "build"
+  },
+  "build": {
+    "appId": "MusicPlayer",
+    "mac": {
+      "category": "public.app-category.productivity"
+    },
+    "dmg": {
+      "background": "build/appdmg.png",
+      "icon": "build/icon.icns",
+      "iconSize": 100,
+      "contents": [
+        {
+          "x": 380,
+          "y": 280,
+          "type": "link",
+          "path": "/Applications"
+        },
+        {
+          "x": 110,
+          "y": 280,
+          "type": "file"
+        }
+      ],
+      "window": {
+        "width": 500,
+        "height": 500
+      }
+    }
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Viking Zhang",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^5.0.6",
+    "electron-builder": "^20.40.2",
+    "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "electron-store": "^3.2.0",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0",
+    "uuid": "^3.3.2"
+  }
+}

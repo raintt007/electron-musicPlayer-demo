@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>music</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="../public/css/style.css" />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1>我的播放器</h1>
+      <button
+        type="button"
+        id="add-music-button"
+        class="btn btn-primary btn-lg btn-block mt-4"
+      >
+        添加歌曲
+      </button>
+      <div id="tracksList" class="mt-4"></div>
+    </div>
+    <div class="container fixed-bottom pb-4">
+      <hr />
+      <div class="row my-2" id="player-status"></div>
+      <div>
+        <i id="musicBack" class="fa fa-step-backward" aria-hidden="true"></i>
+        <i id="musicForward" class="fa fa-step-forward" aria-hidden="true"></i>
+        <i id="volumeDown" class="fa fa-volume-down" aria-hidden="true"></i>
+        <i id="volumeUp" class="fa fa-volume-up" aria-hidden="true"></i>
+      </div>
+      <div class="progress">
+        <div
+          class="progress-bar bg-success"
+          id="player-progress"
+          role="progressbar"
+          style="width: 0%; color: black"
+        >
+          0%
+        </div>
+      </div>
+    </div>
+    <script>
+      require("./index.js");
+    </script>
+  </body>
+</html>
