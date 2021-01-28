@@ -45,7 +45,7 @@
   "author": "",
   "license": "",
   "devDependencies": {
-    "electron": "^5.0.6",
+    "electron": "^9.4.0",
     "electron-builder": "^20.40.2",
     "nodemon": "^1.18.10"
   },
